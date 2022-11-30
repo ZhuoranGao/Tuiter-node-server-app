@@ -8,6 +8,7 @@ import UserController
 import TuitsController
     from "./controllers/tuits/tuits-controller.js";
 const app = express()
+
 app.use(cors())
 app.use(express.json());
 TuitsController(app);
@@ -40,5 +41,10 @@ console.log(`${CONNECTION_STRING}`)
 //     console.log("Connected to MongoDB")
 //     //app.listen(port, () => console.log(`tuiter app listening on port ${port}!`));
 //  });
+
+
+
+
+
 
 app.listen(process.env.PORT || 4000);
